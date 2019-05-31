@@ -1,6 +1,13 @@
 <template>
     <div class="home">
-        <heades></heades>
+        <heades signin-up='home'>
+            <span slot='logo' class="head_logo"  @click="reload">ele.me</span>
+            <!-- <p @click="reload">ele.me</p> -->
+        </heades>
+        <nav class="nav_city">
+            <span>当前定位城市</span>
+            <span>定位不准时，请在城市列表中选择</span>
+        </nav>
     </div>
 </template>
 <script>
@@ -14,6 +21,11 @@ export default {
     },
     components: {
         heades,
+    },
+    methods: {
+        reload(){
+            window.location.reload();
+        }
     }
 }
 </script>
@@ -21,6 +33,9 @@ export default {
 .home{
     height 90px;
     background-color themeColor;
+    .nav_city{
+        color colorRed;
+    }
 }
 </style>
 

@@ -1,7 +1,9 @@
 <template>
     <div class="heades">
-        <slot>32332</slot>
-        header 部分
+        <div class="head-top">
+
+            <div>登录/注册</div>
+        </div>
     </div>
 </template>
 <script>
