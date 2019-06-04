@@ -6,7 +6,7 @@
 
 <script>
 import './assets/style/common.styl';
-import './assets/style/mixin.styl';
+// import './assets/style/mixin.styl';
 export default {
   name: 'App'
 }

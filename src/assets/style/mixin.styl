@@ -1,2 +1,42 @@
 //全局变量文件
-colorRed = red;
+
+//字体大小，颜色
+sc(size,color){
+    font-size size;
+    color color;
+}
+//宽、高
+wh(width,height){
+    width width;
+    height height;
+}
+//border 的样式；
+borders(size,type,color,position){
+    if(position == 'top'){
+        border-top size type color;
+    }
+    if(position == 'bottom'){
+        border-bottom size type color;
+    }
+    if(position == 'left'){
+        border-left size type color;
+    }
+    if(position == 'right'){
+        border-right size type color;
+    }
+    if(position == null){
+        border size type color;
+    }
+        
+}
+//定位上下居中
+ct(){
+    position absolute;
+    top 50%;
+    transform translateY(-50%);
+}
+//flex布局 子元素 对齐方式
+fj(){
+    display flex;
+    justify-content space-between;
+}
