@@ -43,7 +43,7 @@ export default async(url = '', data = {}, type = 'GET', method = 'fetch') => {
 		} catch (error) {
 			throw new Error(error)
 		}
-	} else {
+	} else {//如果浏览器不支持fetch
 		return new Promise((resolve, reject) => {
 			let requestObj;
 			if (window.XMLHttpRequest) {
